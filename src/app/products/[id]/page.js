@@ -8,7 +8,7 @@ export default async function ProductPage ({params}) {
 
     const product= products.find((item)=>item.id==id)
   return (
-    <div className="group relative flex md:flex-row flex-col md:items-start items-center overflow-hidden rounded-lg cursor-pointer">
+    <div className="group relative flex md:flex-row flex-col md:items-start items-center overflow-hidden rounded-lg cursor-pointer m-10">
       
 
       {/* Product Image */}

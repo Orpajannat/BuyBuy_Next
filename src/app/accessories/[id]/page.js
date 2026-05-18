@@ -30,11 +30,11 @@ export default async function ProductPage ({params}) {
         <p>{product.description3}</p>
         <div className="flex flex-col">
             <p className="font-semibold bg-gray-100">Product details:</p>
-            <p className="flex items-center gap-2"><Circle size="10"/> {product.d1}</p>
-            <p className="flex items-center gap-2"><Circle size="10"/>{product.d2}</p>
-            <p className="flex items-center gap-2"><Circle size="10"/>{product.d3}</p>
-            <p className="flex items-center gap-2"><Circle size="10"/>{product.d4}</p>
-            <p className="flex items-center gap-2"><Circle size="10"/>{product.d5}</p>
+            {product.d1 && <p className="flex items-center gap-2"><Circle size="10"/> {product.d1}</p>}
+            {product.d2 && <p className="flex items-center gap-2"><Circle size="10"/> {product.d2}</p>}
+            {product.d3 && <p className="flex items-center gap-2"><Circle size="10"/> {product.d3}</p>}
+            {product.d4 && <p className="flex items-center gap-2"><Circle size="10"/> {product.d4}</p>}
+            {product.d5 && <p className="flex items-center gap-2"><Circle size="10"/> {product.d5}</p>}
         </div>
         <p className="mt-1.5 text-sm text-gray-700 font-semibold">{product.price} BDT</p>
 
